@@ -292,13 +292,65 @@ tail -f /var/log/syslog | tee log
 # How to append file?
 ```
 
-## Linux Exercise
+## Linux Command Line Exercise
 
 * Find how to copy all the /etc/ to your home directory and preserve all the permissions
 * Find which file in /var/log/ that keep log who using sudo command and how to show it?
 * Which files in /proc/ that show how many cores of CPU, how much of memory?
-* How to add our home to $PATH
-* How to install fonts without root privilege
-* Create soft link name "temporary" to /tmp with command line on your desktop
+
+## Linux Process
+
+* ```ps -ux```
+  * Lists all the processes belonging to the current user
+* ```ps -aux```
+  * Lists all the processes running on the system
+* ```ps -aux | grep userid | grep bash```
+* ```top```
+
+## Quoting
+
+```bash
+echo "Hello World"
+echo "You are logged as $USER"
+echo /var/log/*.log
+echo "/var/log/*.log"
+echo 'You are logged as $USER'
+echo "Using Linux `uname -r`"
+cd /lib/modules/`uname -r`
+```
+
+## Disk
+
+```bash
+du
+# returns size on disk of the given file or directory
+du -h <file>
+du -sh <dir>
+df
+# Returns disk space information
+df -h <dir>
+df -h
+```
+
+## Tar
+
+```bash
+sudo tar cvf etc.tar /etc/
+sudo tar cvfz etc.tar.gz /etc/
+tar xvf etc.tar
+mv etc.tar.gz etc.tgz
+tar xvfz etc.tgz
+tar tvf etc.tar
+tar tvfz etc.tgz
+```
+
+## Tar Exercise
+
+* What is difference between
+  * sudo tar cvf etc.tar /etc/
+  * sudo tar cvf etc.tar /etc
+* Does it matter to have .tar or .tar.gz?
+* Backup /var/log/apt and /var/log/fsck in bzip2 compress file with one command to your home directory
+* Extract above backup file from your home directory to /opt in one command
 
 Next: [Git](02-git.md)
