@@ -229,8 +229,8 @@ sort -r /etc/passwd
 * Copy *slide01.txt* to *slide02.txt* and *slide03.txt* inside *wipcamp12* directory
 * Copy *wipcamp12* directory to *wipcamp13*
 * Delete *slide03.txt* inside *wipcamp13*
-* Move *slide01.txt* inside *wipcamp12* to *newslide.txt* inside *wipcamp12*
-* Delete *wipcamp12* and *wipcamp12*
+* Move *slide01.txt* inside *wipcamp12* to *newslide.txt* inside *wipcamp13*
+* Delete *wipcamp12* and *wipcamp13*
 
 ## Play with permission
 
