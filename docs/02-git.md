@@ -1,4 +1,4 @@
-# Git and GitLab Workshop
+# Git and GitHub Workshop
 
 ## Prepare Git Repository
 
@@ -47,9 +47,9 @@ git status
 
 * Put command `git log` or `git log --oneline` to see history of commit
 
-## Push Repository to GitLab
+## Push Repository to GitHub
 
-### Add your SSH Public Key to GitLab
+### Add your SSH Public Key to GitHub
 
 * On Cloud Shell
 
@@ -76,7 +76,7 @@ cat ~/.ssh/id_rsa.pub
 ### Add remote repository and push code
 
 * Copy `git remote add origin ...` command in `…or push an existing repository from the command line` section
-* Use command `git push -u origin master` to push code to GitLab On Cloud Shell
+* Use command `git push -u origin master` to push code to GitHub On Cloud Shell
 
 ```bash
 git remote add origin git@github.com:winggundamth/bookinfo-ratings.git
