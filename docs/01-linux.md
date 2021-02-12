@@ -248,7 +248,7 @@ ls -l testperm
 chmod 700 testperm
 ls -l testperm
 ./testperm
-mv testperm ~user
+sudo su postgres
 
 # Open new terminal
 ./testperm

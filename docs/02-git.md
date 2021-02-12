@@ -5,8 +5,8 @@
 * Config git user and email for commit user data first
 
 ```bash
-git config --global user.name "training[X]"
-git config --global user.email "training[X]@opsta.net"
+git config --global user.name "student[X]"
+git config --global user.email "student[X]@sit[Y].opsta.in.th"
 # See your git config
 git config --list
 ```
@@ -28,6 +28,10 @@ git init
 
 Rating service has been developed on NodeJS
 ```
+
+## Practice Markdown
+
+* <https://www.markdowntutorial.com>
 
 ## First Git Commit
 
@@ -56,49 +60,38 @@ cat ~/.ssh/id_rsa.pub
 
 > You can copy text on Cloud Shell by just drag on text your want to copy and it will copy to your clipboard automatically
 
-* Go to <https://git.demo.opsta.co.th> and login with your credential
-* Go to <https://git.demo.opsta.co.th/profile/keys> or menu `Settings` on your avatar icon on the top right and choose menu `SSH Keys` on the left
-* Put your public key on the `Key` textbox and click `Add key`
+* Go to <https://github.com>, Sign up and login with your credential
+* Go to <https://github.com/settings/keys> or menu `Settings` on your avatar icon on the top right and choose menu `SSH and GPG keys` on the left
+* Click on `New SSH key`
+* Put `Title` of your public key and your key on the `Key` textbox and click `Add SSH key`
 
-### Create your own subgroup
+### Create your first repository
 
-* Go to `Groups` > `Your groups` menu on the top left
-* Click on `AIS DevSecOps Bootcamp` group
-* Click on `small arrow down` next to the right of `New project` green botton on the top right and choose `New subgroup`. Then click on `New subgroup` button.
-* Create your own group
-  * Group name: `training[X]`
-  * Group URL: `training[X]`
-  * Leave the rest default
-
-### Create your first project
-
-* Click on your newly created subgroup `training[X]`
-* Click on New project
+* Go to <https://github.com> and click on `New` button on the left
 * Create rating project
-  * Project name: `ratings`
-  * Project URL: `adb/training[X]`
-  * Project slug: `ratings`
+  * Owner: `[Your Username]`
+  * Repository name: `bookinfo-ratings`
   * Leave the rest default
 
 ### Add remote repository and push code
 
-* Copy `git remote add origin ...` command in `Push an existing folder` section
+* Copy `git remote add origin ...` command in `…or push an existing repository from the command line` section
 * Use command `git push -u origin master` to push code to GitLab On Cloud Shell
 
 ```bash
-git remote add origin git@git.demo.opsta.co.th:adb/training[X]/ratings.git
+git remote add origin git@github.com:winggundamth/bookinfo-ratings.git
 # To see remote repository has been added
 git remote -v
 git push -u origin master
 # Maybe you need to answer yes for the first time push
 ```
 
-* Refresh ratings main page on GitLab again to see change
+* Refresh ratings main page on GitHub again to see change
 
 ## Adding ratings source code to repository
 
 * On Cloud Shell, `mkdir src` to create src directory
-* Copy [package.json](../src/ratings/package.json) and [ratings.js](../src/ratings/ratings.js) to your `src` directory
+* Copy [package.json](https://github.com/opsta/bookinfo/blob/main/src/ratings/package.json) and [ratings.js](https://github.com/opsta/bookinfo/blob/main/src/ratings/ratings.js) to your `src` directory
 * Commit and push the code
 
 ```bash
@@ -111,7 +104,15 @@ git push origin master
 
 ## Let's update your friend's source code
 
-* Ask for repository url from people next to you. It is on the menu `Clone` > `Clone with SSH` in repository main page
+* Ask for username and repository url from your pair people
+* It is on the menu `Code` > `SSH` in repository main page
+* Add your friend for pushing code permission by
+  * Go to `Settings` in repository main page
+  * Click on `Manage access` menu
+  * Click on `Invite a collaborator` button
+  * Put your friend username
+  * Click on `Add [username] to this repository`
+  * Let your friend accept invitation by email
 * Clone your friend's source code on Cloud Shell
 
 ```bash
@@ -119,28 +120,18 @@ git push origin master
 cd
 pwd
 
-# Clone repository into training[X]-ratings directory
-git clone git@git.demo.opsta.co.th:adb/training[X]/ratings.git training[X]-ratings
-cd training[X]-ratings
+# Clone repository into [username]-ratings directory
+git clone git@github.com:[username]/bookinfo-ratings.git [username]-ratings
+cd [username]-ratings
 ```
 
-* Add license section in `README.md` of your friend's repository
-
-```markdown
-# Bookinfo Rating Service
-
-Rating service has been developed on NodeJS
-
-## License
-
-MIT License
-```
+* Create new `LICENSE` file by copy MIT license from <https://choosealicense.com/licenses/mit/> and change `[year]` and `[fullname]`
 
 * Commit and push your change
 
 ```bash
 git status
-git add README.md
+git add LICENSE README.md
 git status
 git commit -m "Add License"
 git push
@@ -149,7 +140,7 @@ git push
 * Change directory back to your code and update your code
 
 ```bash
-cd ../ratings
+cd ../bookinfo-ratings
 git pull
 ```
 
@@ -166,40 +157,82 @@ git branch
 git push origin dev
 ```
 
+* Add license section in `README.md` and push code
+
+```markdown
+# Bookinfo Rating Service
+
+Rating service has been developed on NodeJS
+
+## License
+
+MIT License
+```
+
 ## Protect your master branch from direct pushing
 
-* Go to menu `Settings` > `Repository` on GitLab
-* Expand `Protected Branches`
-* Change `Allowed to push` to `No one`
-* This will allow no one to direct push to master branch but you have to change via merge request only
+* Go to menu `Settings` > `Branches` on GitHub
+* Click on `Add rule`
+* Branch protection rule
+  * Branch name pattern: `master`
+  * Require pull request reviews before merging: `checked`
+* This will allow no one to direct push to master branch but you have to change via pull request only
 
-## Change setting not to delete source branch by default
+## Merge request 
 
-* Go to menu `Setting` > `General` on GitLab
-* Expand `Merge requests`
-* Unchecked `Enable 'Delete source branch' option by default`
-* Click `Save changes`
+* Checkout your friend repository to dev branch
 
-## .gitignore file
+```bash
+cd ../[username]-ratings
+git pull
+git checkout dev
+```
 
 * Create new file name `.gitignore` and push these content
 
 ```gitignore
 .project
 .settings
+id_rsa
 ```
 
 > Watch out on Cloud Shell Text Editor that it won't show hidden file that have `.` as prefix filename
 
-* This will prevent you from adding `.project` and `.settings` file or directory. But you still can force add by using `git add -f`.
+* This will prevent you from adding `.project`, `.settings`, and `id_rsa` file or directory. But you still can force add by using `git add -f`.
 * Commit and push change
+* Test .gitignore
 
-## Merge Requests
+```bash
+cp ~/.ssh/id_rsa .
+git status
+git add .
+git add id_rsa
+git add -f id_rsa
+git status
+git reset HEAD
+```
 
-* Go to menu `Merge Requests` on GitLab
-* Click on `Create merge request`
-* See `Commits` and `Changes` tabs. You can leave everything default and click on `Submit merge request`
-* Since you are maintainer, you can click on `Merge` button to merge code from `dev` to `master` branch.
-* See your changes on master branch
+## Create Pull request
 
-Next: [Docker Workshop](03-docker.md)
+* Go to menu `Pull requests` on GitHub
+* Click on `New pull request`
+* Choose `base: master` <- `compare: dev`
+* See the change and click on `Create pull request` button
+* Put title and comment
+* Choose `Reviewers` and `Assignees` to your friend
+* Click on `Create pull request`
+
+## Merge pull request
+
+* Go to your own repository and go to `Pull requests`
+* Go to pull request
+* Click on Merge pull request
+
+```bash
+cd ../bookinfo-ratings
+git pull
+git checkout master
+ls -la
+git pull
+ls -la
+```
