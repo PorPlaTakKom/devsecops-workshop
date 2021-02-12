@@ -240,7 +240,7 @@ ls -la
 ## Exercise
 
 * Tell your username to TA to invite to <https://github.com/sit-2021-int209/index> repository
-* Update this page <https://github.com/sit-2021-int209/index/blob/master/docs/students.md>. Put your ID, Firstname, Lastname, GitHub and link to your repository by using index link
+* Update this page <https://github.com/sit-2021-int209/index/blob/dev/docs/students.md>. Put your ID, Firstname, Lastname, GitHub and link to your repository by using index link. **UPDATE ON DEV BRANCH ONLY**
 * Create your own public repository `int209-assignments`
 * Create following structure
 
