@@ -239,8 +239,13 @@ ls -la
 
 ## Exercise
 
+### Assignment 1
+
 * Tell your username to TA to invite to <https://github.com/sit-2021-int209/index> repository
 * Update this page <https://github.com/sit-2021-int209/index/blob/dev/docs/students.md>. Put your ID, Firstname, Lastname, GitHub and link to your repository by using index link. **UPDATE ON DEV BRANCH ONLY**
+
+### Assignment 2
+
 * Create your own public repository `int209-assignments`
 * Create following structure
 
@@ -257,7 +262,9 @@ ls -la
   * You can not use to make your own money
   * You can not change my work
 * Copy `Print Work or Media` text on the right and put to your `LICENSE` file
-* Update `README.md` as sample below
+
+### Assignment 3
+
 * Update `01-linux.md` to answer the exercise last week in this format
 
 ````markdown
