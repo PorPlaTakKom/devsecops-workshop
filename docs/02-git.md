@@ -242,7 +242,10 @@ ls -la
 ### Assignment 1
 
 * Tell your username to TA to invite to <https://github.com/sit-2021-int209/index> repository
-* Update this page <https://github.com/sit-2021-int209/index/blob/dev/docs/students.md>. Put your ID, Firstname, Lastname, GitHub and link to your repository by using index link. **UPDATE ON DEV BRANCH ONLY**
+* Update this page <https://github.com/sit-2021-int209/index/blob/dev/docs/students.md>. Put your ID, Firstname, Lastname, GitHub and link to your repository by using index link. with following condition
+  * UPDATE ON DEV BRANCH ONLY
+  * Format table
+  * Sort by ID
 
 ### Assignment 2
 
@@ -265,7 +268,7 @@ ls -la
 
 ### Assignment 3
 
-* Update `01-linux.md` to answer the exercise last week in this format
+* Update `01-linux.md` to answer the [exercise](01-linux.md#excercise-file) last week in this format
 
 ````markdown
 # Linux assignment
