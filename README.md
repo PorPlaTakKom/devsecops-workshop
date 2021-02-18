@@ -16,3 +16,4 @@ Opsta (Thailand) Co.,Ltd.
 
 * [Linux Command Line Workshop](docs/01-linux.md)
 * [Git Workshop](docs/02-git.md)
+* [Docker Workshop](docs/03-docker.md)
