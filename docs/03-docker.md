@@ -190,6 +190,7 @@ mkdir ~/ratings/databases
 * Run MongoDB Container again
 
 ```bash
+cd ~/ratings/
 # Run MongoDB Container
 docker rm -f mongodb
 docker run -d --name mongodb -p 27017:27017 \
