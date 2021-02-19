@@ -186,7 +186,7 @@ docker run -d --name ratings -p 8080:8080 --link mongodb:mongodb \
 mkdir ~/ratings/databases
 ```
 
-* Add [ratings_data.json](../src/ratings/databases/ratings_data.json) and [script.sh](../src/ratings/databases/script.sh) to `databases/` directory
+* Add [ratings_data.json](https://github.com/opsta/bookinfo/blob/main/src/ratings/databases/ratings_data.json) and [script.sh](https://github.com/opsta/bookinfo/blob/main/src/ratings/databases/script.sh) to `databases/` directory
 * Run MongoDB Container again
 
 ```bash
