@@ -7,6 +7,15 @@
 * Docker Compose
 * Your own text editor such as Vim or VSCode
 
+## Install Docker Compose
+
+```bash
+sudo CRYPTOGRAPHY_DONT_BUILD_RUST=1 pip3 install docker-compose
+sudo curl -L https://raw.githubusercontent.com/docker/compose/1.28.5/contrib/completion/bash/docker-compose \
+  -o /etc/bash_completion.d/docker-compose
+docker-compose version
+```
+
 ## Change Docker Command to Docker Compose
 
 * Create `docker-compose.yml` file with below content
