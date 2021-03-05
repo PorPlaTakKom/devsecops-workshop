@@ -17,3 +17,6 @@ Opsta (Thailand) Co.,Ltd.
 * [Linux Command Line Workshop](docs/01-linux.md)
 * [Git Workshop](docs/02-git.md)
 * [Docker Workshop](docs/03-docker.md)
+* [Docker Compose Workshop](docs/04-docker-compose.md)
+* [Kubernetes Command Line Workshop](docs/05-k8s-cli.md)
+* [Kubernetes Manifest File Workshop](docs/06-k8s-manifest.md)
