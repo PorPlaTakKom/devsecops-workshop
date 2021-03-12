@@ -81,6 +81,7 @@ kubectl describe deployments nginx
 
 ```bash
 kubectl expose deployment nginx --type ClusterIP --port 80
+kubectl get service
 kubectl proxy --port=8080
 # Click preview port 8080
 # access via /api/v1/namespaces/student[xxx]-bookinfo-dev/services/nginx:80/proxy/
