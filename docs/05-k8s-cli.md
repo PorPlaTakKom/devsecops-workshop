@@ -77,6 +77,15 @@ kubectl get deployment
 kubectl describe deployments nginx
 ```
 
+## Use Service ClusterIP and access by Proxy
+
+```bash
+kubectl expose deployment nginx --type ClusterIP --port 80
+kubectl proxy --port=8080
+# Click preview port 8080
+# access via /api/v1/namespaces/student[xxx]-bookinfo-dev/services/nginx:80/proxy/
+```
+
 ## Rollback deployment
 
 ```bash
