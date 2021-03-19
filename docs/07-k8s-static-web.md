@@ -27,8 +27,6 @@ ssh-keygen
 wget https://github.com/opsta/opsta-www.github.io/archive/gh-pages.zip
 unzip gh-pages.zip
 mkdir opsta-web
-find opsta-www.github.io-gh-pages -type f \
-  -exec sed -i 's!https://www.opsta.co.th/!https://dev.opsta.co.th/student150/opsta/!g' {} \;
 mv opsta-www.github.io-gh-pages opsta-web/src
 cd opsta-web
 ls -l
