@@ -115,7 +115,13 @@ spec:
 ```bash
 kubectl create -f 02-apache-deployment.yaml -f 02-apache-service.yaml --record
 kubectl get deployments
-kubectl get services -w
+kubectl get services
+
+kubectl expose deployment apache --type ClusterIP --port 80
+kubectl get service
+kubectl proxy --port=8080
+# Click preview port 8080
+# access via /api/v1/namespaces/student[xxx]-bookinfo-dev/services/apache:80/proxy/
 ```
 
 ## Clean every deployment and service
