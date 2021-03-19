@@ -12,6 +12,14 @@
 * To play with service type Ingress, you need to deploy Nginx Ingress Controller and map external ip address with domain
 * Your own text editor such as Vim or VSCode
 
+## Prepare Kubernetes Environment
+
+```bash
+gcloud container clusters get-credentials k8s --project zcloud-cicd --zone asia-southeast1-a
+kubectl create namespace student[X]-opsta-dev
+kubectl config set-context $(kubectl config current-context) --namespace=student[X]-opsta-dev
+```
+
 ## Deploy Pod with Manifest File
 
 * `mkdir ~/k8s` to create folder for Kubernetes Manifest File
