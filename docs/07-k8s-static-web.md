@@ -45,8 +45,6 @@ git branch -M main
 git push -u origin main
 ```
 
-## Create Dockerfile and docker-compose.yml
-
 ## Install Docker Compose
 
 ```bash
@@ -56,14 +54,16 @@ sudo curl -L https://raw.githubusercontent.com/docker/compose/1.28.5/contrib/com
 docker-compose version
 ```
 
-* Create Dockerfile
+## Create Dockerfile and docker-compose.yml
+
+* Create `Dockerfile`
 
 ```Dockerfile
 FROM nginx:1.19.8-alpine
 COPY src /usr/share/nginx/html
 ```
 
-* Create docker-compose.yml
+* Create `docker-compose.yml`
 
 ```yaml
 services:
