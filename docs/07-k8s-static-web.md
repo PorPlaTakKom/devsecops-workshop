@@ -21,6 +21,13 @@
 ssh-keygen
 ```
 
+* Initial Git CLI
+
+```bash
+git config --global user.email "62130500[xxx]@mail.kmutt.ac.th"
+git config --global user.name "[MYFIRSTNAME MYLASTNAME]"
+```
+
 * Initial Opsta HTML Static Website
 
 ```bash
@@ -33,7 +40,7 @@ ls -l
 git init
 git add .
 git commit -m "First Initial"
-git remote add origin git@github.com:winggundamth/opsta-web.git
+git remote add origin git@github.com:[GITHUB_USER]/opsta-web.git
 git branch -M main
 git push -u origin main
 ```
