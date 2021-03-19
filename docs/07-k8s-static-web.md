@@ -165,7 +165,7 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-  - port: 8080
+  - port: 80
   selector:
     app: opsta-dev-web
 ```
@@ -178,6 +178,7 @@ kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
   name: opsta-dev-web
   namespace: student[X]-opsta-dev
 spec:
@@ -185,13 +186,13 @@ spec:
   - host: dev.opsta.net
     http:
       paths:
-      - path: /student[X]/opsta/
+      - path: /student[X]/opsta(/|$)(.*)
         pathType: Prefix
         backend:
           service:
             name: opsta-dev-web
             port:
-              number: 8080
+              number: 80
 ```
 
 ```bash
@@ -209,5 +210,9 @@ kubectl get ingress
 
 ## Assignment
 
+* Delete your own namespace and start over
 * Choose any HTML static from <https://www.free-css.com/free-css-templates>
-* Create Dockerfile, docker-compose.yml and Kubernetes Manifest File
+* Create Dockerfile, docker-compose.yml and Kubernetes Manifest File with
+  * repository name: `static-web`
+  * docker image name: `ghcr.io/[GITHUB_USER]/static-web:dev`
+  * path name: `static`
