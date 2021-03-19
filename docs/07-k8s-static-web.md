@@ -222,4 +222,5 @@ kubectl get ingress
 * Create Dockerfile, docker-compose.yml and Kubernetes Manifest File with
   * repository name: `static-web`
   * docker image name: `ghcr.io/[GITHUB_USER]/static-web:dev`
-  * path name: `static`
+  * path name: `/student[X]/static`
+* Commit and push all source code and infrastructure to GitHub
