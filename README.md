@@ -20,3 +20,4 @@ Opsta (Thailand) Co.,Ltd.
 * [Docker Compose Workshop](docs/04-docker-compose.md)
 * [Kubernetes Command Line Workshop](docs/05-k8s-cli.md)
 * [Kubernetes Manifest File Workshop](docs/06-k8s-manifest.md)
+* [Static Website on Kubernetes Workshop](docs/07-k8s-static-web.md)

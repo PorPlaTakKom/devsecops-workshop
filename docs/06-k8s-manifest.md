@@ -134,3 +134,5 @@ kubectl delete pod busybox
 # Check if any pods left
 kubectl get pod
 ```
+
+Next: [Static Website on Kubernetes Workshop](docs/07-k8s-static-web.md)
