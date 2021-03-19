@@ -30,7 +30,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: busybox
-  namespace: student[X]-bookinfo-dev
+  namespace: student[X]-opsta-dev
 spec:
   containers:
   - name: busybox
@@ -78,7 +78,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: apache
-  namespace: student[X]-bookinfo-dev
+  namespace: student[X]-opsta-dev
   labels:
     app: apache
 spec:
@@ -103,7 +103,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: apache
-  namespace: student[X]-bookinfo-dev
+  namespace: student[X]-opsta-dev
 spec:
   type: ClusterIP
   ports:
