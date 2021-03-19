@@ -118,7 +118,7 @@ kubectl get deployments
 kubectl get services
 kubectl proxy --port=8080
 # Click preview port 8080
-# access via /api/v1/namespaces/student[xxx]-bookinfo-dev/services/apache:80/proxy/
+# access via /api/v1/namespaces/student[xxx]-opsta-dev/services/apache:80/proxy/
 ```
 
 ## Clean every deployment and service
