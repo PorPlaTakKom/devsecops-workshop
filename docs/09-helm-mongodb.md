@@ -129,7 +129,10 @@ exit
 * Create 2 more bookinfo namespaces for UAT and Production
   * student[X]-bookinfo-uat
   * student[X]-bookinfo-prd
-* Deploy MongoDB for each namespace
+* Deploy MongoDB for each namespace with separate helm value files
+  * k8s/helm-values/values-bookinfo-dev-ratings-mongodb.yaml
+  * k8s/helm-values/values-bookinfo-uat-ratings-mongodb.yaml
+  * k8s/helm-values/values-bookinfo-prd-ratings-mongodb.yaml
 * Create manifest files for each namespace inside `k8s` directory
   * k8s/dev/ratings-*.yaml
   * k8s/uat/ratings-*.yaml
