@@ -123,3 +123,18 @@ exit
 ```
 
 * Run `kubectl apply -f k8s/` and test if ratings service still working
+
+## Assignment
+
+* Create 2 more bookinfo namespaces for UAT and Production
+  * student[X]-bookinfo-uat
+  * student[X]-bookinfo-prd
+* Deploy MongoDB for each namespace
+* Create manifest files for each namespace inside `k8s` directory
+  * k8s/dev/ratings-*.yaml
+  * k8s/uat/ratings-*.yaml
+  * k8s/prd/ratings-*.yaml
+* Deploy bookinfo on each environment and test it
+  * https://bookinfo.dev.opsta.net/student[X]/ratings/ratings/1
+  * https://bookinfo.uat.opsta.net/student[X]/ratings/ratings/1
+  * https://bookinfo.opsta.net/student[X]/ratings/ratings/1
