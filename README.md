@@ -21,3 +21,5 @@ Opsta (Thailand) Co.,Ltd.
 * [Kubernetes Command Line Workshop](docs/05-k8s-cli.md)
 * [Kubernetes Manifest File Workshop](docs/06-k8s-manifest.md)
 * [Static Website on Kubernetes Workshop](docs/07-k8s-static-web.md)
+* [Deploy Bookinfo Rating Service on Kubernetes Workshop](docs/08-k8s-rating.md)
+* [Deploy MongoDB with Helm Chart](docs/09-helm-mongodb.md)

@@ -224,3 +224,5 @@ kubectl get ingress
   * docker image name: `ghcr.io/[GITHUB_USER]/static-web:dev`
   * path name: `/student[X]/static`
 * Commit and push all source code and infrastructure to GitHub
+
+Next: [Deploy Bookinfo Rating Service on Kubernetes Workshop](08-k8s-rating.md)
