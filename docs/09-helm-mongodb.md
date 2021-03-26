@@ -138,6 +138,7 @@ exit
   * k8s/uat/ratings-*.yaml
   * k8s/prd/ratings-*.yaml
 * Deploy bookinfo on each environment and test it
-  * <https://bookinfo.dev.opsta.net/student[X]/ratings/ratings/1>
-  * <https://bookinfo.uat.opsta.net/student[X]/ratings/ratings/1>
-  * <https://bookinfo.opsta.net/student[X]/ratings/ratings/1>
+  * <http://bookinfo.dev.opsta.net/student[X]/ratings/ratings/1>
+  * <http://bookinfo.uat.opsta.net/student[X]/ratings/ratings/1>
+  * <http://bookinfo.opsta.net/student[X]/ratings/ratings/1>
+* Git push to repository and tagging to `v1.0.0`
