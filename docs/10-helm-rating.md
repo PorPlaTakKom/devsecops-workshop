@@ -18,6 +18,7 @@ kubectl delete namespace student[X]-bookinfo-prd
   * `student[X]-bookinfo-prd`
 * Set default working namespace to `student[X]-bookinfo-dev`
 * Create Kubernetes imagePullSecrets
+* Create Kubernetes ConfigMap for MongoDB initial database script
 * Deploy MongoDB with Helm to be ready for Rating Service
 
 ### Create Helm Chart
