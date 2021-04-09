@@ -17,3 +17,4 @@ Opsta (Thailand) Co.,Ltd.
 * [Static Website on Kubernetes Workshop](docs/07-k8s-static-web.md)
 * [Deploy Bookinfo Rating Service on Kubernetes Workshop](docs/08-k8s-rating.md)
 * [Deploy MongoDB with Helm Chart](docs/09-helm-mongodb.md)
+* [Deploy Rating Service with Helm Chart](docs/10-helm-rating.md)

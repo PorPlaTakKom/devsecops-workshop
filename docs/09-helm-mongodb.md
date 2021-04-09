@@ -142,3 +142,5 @@ exit
   * <http://bookinfo.uat.opsta.net/student[X]/ratings/ratings/1>
   * <http://bookinfo.opsta.net/student[X]/ratings/ratings/1>
 * Git push to repository and tagging to `v1.0.0`
+
+Next: [Deploy Rating Service with Helm Chart](10-helm-rating.md)
