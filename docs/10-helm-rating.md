@@ -72,7 +72,6 @@ ratings:
   imagePullSecrets: registry-bookinfo
   port: 8080
   healthCheckPath: "/health"
-  mongodbPasswordExistingSecret: bookinfo-dev-ratings-mongodb-secret
 ingress:
   annotations:
     kubernetes.io/ingress.class: nginx
