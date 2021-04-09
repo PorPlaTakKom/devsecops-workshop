@@ -37,7 +37,7 @@ maintainers:
   - name: student[X]
     email: devop[X]@mail.kmutt.ac.th
 sources:
-  - https://github.com/[USERNAME]
+  - https://github.com/[USERNAME]/bookinfo-ratings
 ```
 
 * `mkdir ~/bookinfo-ratings/k8s/helm/templates` to create directory for Helm Templates
