@@ -145,7 +145,7 @@ Create Helm value and deploy Rating service for UAT and Production environment
 ## Assignment
 
 * Create Kubernetes & Helm deployment for `details` service
-* Deploy details service on 3 environments on 3 namespaces
+* Deploy details service on 3 environments on each namespaces
   * `student[X]-bookinfo-dev`
   * `student[X]-bookinfo-uat`
   * `student[X]-bookinfo-prd`
