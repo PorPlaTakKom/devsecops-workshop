@@ -29,9 +29,23 @@ kubectl delete namespace student[X]-bookinfo-prd
 
 ```bash
 cd ~/bookinfo-ratings
+
+# Push latest code on master branch
+git checkout master
 git pull origin master
-git pull origin dev
+git status
+git add .
+git commit -m "Add latest file"
+git push origin master
+
+# Update dev branch
 git checkout -b dev
+git checkout dev
+git pull origin dev
+git push origin dev
+# Merge master to dev on GitHub
+
+git pull origin dev
 mkdir -p .github/workflows/
 touch .github/workflows/hello-world.yml
 ```
