@@ -26,6 +26,7 @@ kubectl delete namespace student[X]-bookinfo-prd
 ## Create GitHub Workflow
 
 * On Google Cloud Shell
+* Prepare master and dev branch to be the same
 
 ```bash
 cd ~/bookinfo-ratings
@@ -44,8 +45,22 @@ git checkout dev
 git pull origin dev
 git push origin dev
 # Merge master to dev on GitHub
-
 git pull origin dev
+```
+
+* If who having problem and want to reset dev branch
+
+```bash
+git checkout master
+git branch -d dev
+git push origin --delete dev
+git checkout -b dev
+git push origin dev 
+```
+
+* Create GitHub Workflows
+
+```bash
 mkdir -p .github/workflows/
 touch .github/workflows/hello-world.yml
 ```
