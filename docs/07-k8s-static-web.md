@@ -212,7 +212,7 @@ kubectl get service
 kubectl get ingress
 ```
 
-* Try to access <https://dev.opsta.net/student[X]/opsta> to check the deployment
+* Try to access <http://dev.opsta.net/student[X]/opsta> to check the deployment
 * Commit and push your code
 
 ## Assignment

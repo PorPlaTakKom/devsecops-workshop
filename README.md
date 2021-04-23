@@ -18,3 +18,4 @@ Opsta (Thailand) Co.,Ltd.
 * [Deploy Bookinfo Rating Service on Kubernetes Workshop](docs/08-k8s-rating.md)
 * [Deploy MongoDB with Helm Chart](docs/09-helm-mongodb.md)
 * [Deploy Rating Service with Helm Chart](docs/10-helm-rating.md)
+* [CI/CD with GitHub Actions Workshop](docs/11-github-actions.md)

@@ -32,12 +32,12 @@ description: Bookinfo Ratings Service Helm Chart
 name: bookinfo-ratings
 version: 1.0.0
 appVersion: 1.0.0
-home: https://bookinfo.dev.opsta.net/student[X]/ratings
+home: http://bookinfo.dev.opsta.net/student[X]/ratings
 maintainers:
   - name: student[X]
     email: devop[X]@mail.kmutt.ac.th
 sources:
-  - https://github.com/[USERNAME]/bookinfo-ratings
+  - https://github.com/[GITHUB_USER]/bookinfo-ratings
 ```
 
 * `mkdir ~/bookinfo-ratings/k8s/helm/templates` to create directory for Helm Templates
@@ -52,7 +52,7 @@ helm install bookinfo-dev-ratings k8s/helm
 kubectl get deployment,pod,service,ingress
 ```
 
-* Try to access <https://bookinfo.dev.opsta.net/student[X]/ratings/health> and <https://bookinfo.dev.opsta.net/student[X]/ratings/ratings/1> to check the deployment
+* Try to access <http://bookinfo.dev.opsta.net/student[X]/ratings/health> and <http://bookinfo.dev.opsta.net/student[X]/ratings/ratings/1> to check the deployment
 * Delete previous k8s manifest files
 
 ```bash
@@ -151,3 +151,5 @@ Create Helm value and deploy Rating service for UAT and Production environment
   * `student[X]-bookinfo-prd`
 * There is no database for details service
 * Tag details service repository as `v2.0.0`
+
+Next: [CI/CD with GitHub Actions Workshop](11-github-actions.md)

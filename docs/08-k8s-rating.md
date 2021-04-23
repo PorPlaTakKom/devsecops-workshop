@@ -183,6 +183,6 @@ kubectl apply -f k8s/
 kubectl get deploy,pod,svc,ingress
 ```
 
-* Try to access <https://bookinfo.dev.opsta.net/student[X]/ratings/health> and <https://bookinfo.dev.opsta.net/student[X]/ratings/ratings/1> to check the deployment
+* Try to access <http://bookinfo.dev.opsta.net/student[X]/ratings/health> and <http://bookinfo.dev.opsta.net/student[X]/ratings/ratings/1> to check the deployment
 
 Next: [Deploy MongoDB with Helm Chart](09-helm-mongodb.md)
