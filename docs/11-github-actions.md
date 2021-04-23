@@ -179,7 +179,10 @@ jobs:
 * Add [Endpoint check](https://github.com/marketplace/actions/endpoint-check) to do acceptance test on the last step to see health check page is working
 * Create `uat-env.yml` workflow but event trigger from master branch (Don't forget to prepare ConfigMap, Secret, and deploy MongoDB in the namespace first)
 * Test by pull request and merge from dev to master branch
-* [Challenge] try to use only 1 workflow file with 1 job to follow DRY principle
+
+## Assignment
+
+* Try to use only 1 workflow file with 1 job to follow DRY principle
 * Hints
 
 ```yaml
@@ -200,4 +203,4 @@ jobs:
       ...
 ```
 
-  * Use `${{ env.ENV_NAME }}` to refer to environment name
+  * Then use `${{ env.ENV_NAME }}` to refer to environment name
