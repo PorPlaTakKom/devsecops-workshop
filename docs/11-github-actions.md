@@ -205,7 +205,16 @@ jobs:
 
 ## Practice GitHub Actions
 
-* Add [Endpoint check](https://github.com/marketplace/actions/endpoint-check) to do acceptance test on the last step to see health check page is working
+### Add Acceptance Test
+
+* Add following curl command to do acceptance test on the last step to see health check page is working
+
+```bash
+curl http://bookinfo.dev.opsta.net/student[X]/ratings/health | grep "Ratings is working"
+```
+
+### Add Deploy to UAT Environment
+
 * Create `uat-env.yml` workflow but event trigger from master branch (Don't forget to prepare ConfigMap, Secret, and deploy MongoDB in the namespace first)
 * Test by pull request and merge from dev to master branch
 
