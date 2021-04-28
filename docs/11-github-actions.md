@@ -241,4 +241,5 @@ jobs:
       ...
 ```
 
-  * Then use `${{ env.ENV_NAME }}` to refer to environment name
+* Then use `${{ env.ENV_NAME }}` variable to refer to environment name
+* Push and tag ratings service repository as `v3.0.0`
