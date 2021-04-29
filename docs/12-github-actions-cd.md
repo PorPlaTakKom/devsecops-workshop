@@ -1,5 +1,28 @@
 # CD with GitHub Actions Workshop
 
+## Preparation
+
+* Make sure to commit your latest `bookinfo-ratings` on Google Cloud Shell to your GitHub Repository
+* Make sure your `bookinfo-ratings` branch `master` and `dev` are the same
+* Delete all namespaces
+
+```bash
+kubectl delete namespace student[X]-bookinfo-dev
+kubectl delete namespace student[X]-bookinfo-uat
+kubectl delete namespace student[X]-bookinfo-prd
+```
+
+### Practice Kubernetes
+
+* Recreate namespace again
+  * `student[X]-bookinfo-dev`
+  * `student[X]-bookinfo-uat`
+  * `student[X]-bookinfo-prd`
+* Set default working namespace to `student[X]-bookinfo-dev`
+* Create Kubernetes imagePullSecrets
+* Create Kubernetes ConfigMap for MongoDB initial database script
+* Deploy MongoDB with Helm to be ready for Rating Service
+
 ## Deploy Ratings Service to GCP
 
 ### Create GKE Credential Secret
