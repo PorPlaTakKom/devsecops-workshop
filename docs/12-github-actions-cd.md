@@ -49,7 +49,7 @@ kubectl delete namespace student[X]-bookinfo-prd
           location: asia-southeast1-a
           credentials: ${{ secrets.GKE_CREDENTIALS }}
       - name: deploy
-        uses: 'deliverybot/helm@v1'
+        uses: deliverybot/helm@v1
         with:
           helm: helm3
           release: bookinfo-dev-ratings
@@ -73,9 +73,14 @@ kubectl delete namespace student[X]-bookinfo-prd
 
 ```yaml
           values: |
-            COMMIT_SHA: $GITHUB_SHA
+            {
+              "extraEnv": {
+                "COMMIT_SHA": "${{ github.sha }}"
+              }
+            }
 ```
 
+* Don't forget to add `COMMIT_SHA` to all helm value files in every environments
 * Push code, check GitHub Workflow and test health check page result again.
 
 ## Practice GitHub Actions
@@ -118,3 +123,5 @@ jobs:
 
 * Then use `${{ env.ENV_NAME }}` variable to refer to environment name
 * Push and tag ratings service repository as `v3.0.0`
+
+Next: [Production Deployment with GitHub Actions Workshop](13-github-actions-prd.md)

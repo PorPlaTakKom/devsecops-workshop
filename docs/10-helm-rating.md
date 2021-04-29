@@ -140,7 +140,7 @@ Create Helm value and deploy Rating service for UAT and Production environment
   * <http://bookinfo.dev.opsta.net/student[X]/ratings/ratings/1>
   * <http://bookinfo.uat.opsta.net/student[X]/ratings/ratings/1>
   * <http://bookinfo.opsta.net/student[X]/ratings/ratings/1>
-* Push and tag ratings service repository as `v2.0.0`
+* Push and tag ratings service repository as `2.0.0`
 
 ## Assignment
 
@@ -150,6 +150,6 @@ Create Helm value and deploy Rating service for UAT and Production environment
   * `student[X]-bookinfo-uat`
   * `student[X]-bookinfo-prd`
 * There is no database for details service
-* Tag details service repository as `v2.0.0`
+* Tag details service repository as `2.0.0`
 
 Next: [CI with GitHub Actions Workshop](11-github-actions-ci.md)
