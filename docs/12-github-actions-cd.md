@@ -112,3 +112,5 @@ jobs:
 
 * Then use `${{ env.ENV_NAME }}` variable to refer to environment name
 * Push and tag ratings service repository as `v3.0.0`
+
+Next: [Production Deployment with GitHub Actions Workshop](13-github-actions-prd.md)

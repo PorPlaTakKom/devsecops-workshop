@@ -20,3 +20,4 @@ Opsta (Thailand) Co.,Ltd.
 * [Deploy Rating Service with Helm Chart](docs/10-helm-rating.md)
 * [CI with GitHub Actions Workshop](docs/11-github-actions-ci.md)
 * [CD with GitHub Actions Workshop](docs/12-github-actions-cd.md)
+* [Production Deployment with GitHub Actions Workshop](docs/13-github-actions-prd.md)
