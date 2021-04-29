@@ -152,4 +152,4 @@ Create Helm value and deploy Rating service for UAT and Production environment
 * There is no database for details service
 * Tag details service repository as `v2.0.0`
 
-Next: [CI/CD with GitHub Actions Workshop](11-github-actions.md)
+Next: [CI with GitHub Actions Workshop](11-github-actions-ci.md)
