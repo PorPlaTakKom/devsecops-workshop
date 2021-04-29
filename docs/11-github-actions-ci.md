@@ -95,7 +95,7 @@ on:
     branches:
       - dev
 jobs:
-  deploy-dev:
+  build:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout code
@@ -125,7 +125,7 @@ on:
     branches:
       - dev
 jobs:
-  deploy-dev:
+  build:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout code

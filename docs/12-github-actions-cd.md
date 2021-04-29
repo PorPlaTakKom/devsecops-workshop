@@ -36,6 +36,12 @@ kubectl delete namespace student[X]-bookinfo-prd
 
 ```yaml
 ...
+  deploy:
+    needs: build
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: get-credentials
         uses: google-github-actions/get-gke-credentials@main
         with:
@@ -76,7 +82,7 @@ kubectl delete namespace student[X]-bookinfo-prd
 
 ### Add Acceptance Test
 
-* Add following curl command to do acceptance test on the last step to see health check page is working
+* Add another job to do following curl command for acceptance test to see health check page is working
 
 ```bash
 curl http://bookinfo.dev.opsta.net/student[X]/ratings/health | grep "Ratings is working"
@@ -100,7 +106,7 @@ on:
       - dev
       - master
 jobs:
-  deploy-non-prd:
+  build:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout code
@@ -112,5 +118,3 @@ jobs:
 
 * Then use `${{ env.ENV_NAME }}` variable to refer to environment name
 * Push and tag ratings service repository as `v3.0.0`
-
-Next: [Production Deployment with GitHub Actions Workshop](13-github-actions-prd.md)
