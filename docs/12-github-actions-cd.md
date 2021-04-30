@@ -96,11 +96,11 @@ curl http://bookinfo.dev.opsta.net/student[X]/ratings/health | grep "Ratings is 
 ### Add Deploy to UAT Environment
 
 * Create `uat-env.yml` workflow but event trigger from master branch (Don't forget to prepare ConfigMap, Secret, and deploy MongoDB in the namespace first)
-* Test by pull request and merge from dev to master branch
+* Test by pull request and merge from `dev` to `master` branch
 
 ## Assignment
 
-* Try to use only 1 workflow file with 1 job to follow DRY principle
+* Try to use only 1 workflow file `deploy-non-prd.yml` with 1 job to follow DRY principle
 * Hints
 
 ```yaml
@@ -114,14 +114,12 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
       - name: Set env
         run: echo "ENV_NAME=$( [ "$GITHUB_REF" == "refs/heads/master" ] && echo 'uat' || echo ${GITHUB_REF##*/} )" >> $GITHUB_ENV
       ...
 ```
 
 * Then use `${{ env.ENV_NAME }}` variable to refer to environment name
-* Push and tag ratings service repository as `v3.0.0`
+* Push, pull request to `master` branch and tag ratings service repository as `v3.0.0`
 
 Next: [Production Deployment with GitHub Actions Workshop](13-github-actions-prd.md)
