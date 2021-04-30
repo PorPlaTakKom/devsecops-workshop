@@ -154,4 +154,6 @@ jobs:
           ...
 ```
 
+* You can remove step `action/checkout` since `build-push-action` will checkout git as well
+
 Next: [CD with GitHub Actions Workshop](12-github-actions-cd.md)
