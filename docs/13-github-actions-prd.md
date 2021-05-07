@@ -107,7 +107,7 @@ jobs:
         with:
           helm: helm3
           release: bookinfo-prd-ratings
-          namespace: student169-bookinfo-prd
+          namespace: student[X]-bookinfo-prd
           chart: k8s/helm
           value-files: k8s/helm-values/values-bookinfo-prd-ratings.yaml
           values: |
